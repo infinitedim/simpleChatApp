@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import socketIOClient from "socket.io-client";
 
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
-const SOCKET_SERVER_URL: string = `http://localhost:8080`;
+const SOCKET_SERVER_URL: string = `http://localhost:3000`;
 
 export default function useChat(roomId: any): {
   messages: any[];
